@@ -28,8 +28,7 @@ _Reference: https://www.propertyguru.com.my/property-guides/are-you-earning-enou
 _Source: Household Income and Basic Amenities Survey Report 2019, Department of Statistics Malaysia_
 4. Latitude & longitude from property data and user data is encoded to a geohash to enable mapping without calculating distance. 
 5. For each users, addresses are mapped to iproperty geohash with 2 type of Geohash length; lenghth 7 and 6 ![Screenshot 2022-01-10 at 11 37 33 AM](https://user-images.githubusercontent.com/40256034/148715773-6aee086a-93b8-46ba-9016-65c590e659e7.png)
-
-
+6. For users that are mapped to multiple properties, we will use fuzzywuzzy to get the most similar address by comparing raw user address and property data address
 6. We will have the income group for users that can be mapped to property data
 ##### Note:
 - By using geohash length 7, user will be mapped more accurately as the size of grid is smaller. However, only small number of users can be mapped
@@ -37,6 +36,8 @@ _Source: Household Income and Basic Amenities Survey Report 2019, Department of 
 - Need to note that the trade-off is the accuracy as this method covers all users within appx. 1km grid from a particular property
 
 ## Output/Result
-<img width="911" alt="Screenshot 2022-01-10 at 11 45 49 AM" src="https://user-images.githubusercontent.com/40256034/148716247-72a446ef-e161-4c6f-99a8-e867237c6400.png">
+<img width="916" alt="Screenshot 2022-01-10 at 2 56 41 PM" src="https://user-images.githubusercontent.com/40256034/148728036-33ad9b3d-0eb4-46ca-8371-683c1a13841f.png">
 
+- With geohash length 6: Succesfully tagged 44.4% of users
+- With geohash length 7: Succesfully tagged 8.9% of users
 
