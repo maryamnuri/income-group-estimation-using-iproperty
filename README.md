@@ -6,7 +6,7 @@ using lat and lon
 
 ## Data
 #### 1. Johor_Address.csv
-This data is a dummy address contains for 45 users with. All addresses are Johor residential address with latitude and longitude details extracted from Google Maps.
+This data is a dummy address contains for 45 users with home address. All addresses are Johor residential address with latitude and longitude details extracted from Google Maps.
 
  #### 2. scraped_data.csv
 This is the iproperty scraped data of Johor residential address for sales.
